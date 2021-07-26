@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | AR_GROUP</title>
+    <link rel="shortcut icon" href="logo-batch.png">
+    <link rel="stylesheet" href="loging.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+           <img src="logo-name and batch.png" alt="">
+        </div>
+        </label>
+        <ul>
+           <li><a href="front2-rev.html">Home</a></li>
+           <li><a href="About us.html">About</a></li>
+           <li><a href="admission.html">Abmission</a></li>
+           <li><a href="course.html">Course</a></li>
+           <li><a href="login.html" class="active">Login</a></li>
+        </ul>
+     </nav>
+    <div class="hero">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="login()">Log In</button>
+                <button type="button" class="toggle-btn" onclick="signup()">Sign Up</button>
+            </div>
+            <div class="social-icons">
+                <img src="face.jpg" alt="">
+                <img src="inst.jpg" alt="">
+                <img src="twit.png" alt="">
+            </div>
+            <form action="" class="input-group" id="login">
+                <input type="text" class="input-field" placeholder="User Id" required>
+                <input type="text" class="input-field" placeholder="Enter  Password" required>
+                <input type="checkbox" class="check-box"><span>Remember Password</span>
+                <button type="button" class="submit-btn">Log in</button>
+            </form>
+            <form action="" class="input-group" id="signup">
+                <input type="text" class="input-field" placeholder="User Id" required>
+                <input type="email" class="input-field" placeholder="Email Id" required>
+                <input type="text" class="input-field" placeholder="Enter  Password" required>
+                <input type="checkbox" class="check-box"><span>I agree to the terms and conditions</span>
+                <button type="button" class="submit-btn">Sign Up</button>
+            </form>
+        </div>
+    </div>
+    <!-- <footer>
+        <div class="footer-content">
+            <h3>AR_group</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo iste corrupti doloribus odio sed!</p>
+            <ul class="socials">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>copyright &copy;2021 AR_GROUP. designed by <div>Anand Raj</div></p>
+        </div>
+    </footer> -->
+    <script>
+        var x = document.getElementById("login");
+        var y = document.getElementById("signup");
+        var z = document.getElementById("btn");
+
+        function signup(){
+            x.style.left = "-400px";
+            y.style.left = "50px";
+            z.style.left = "110px";
+        }
+        function login(){
+            x.style.left = "50px";
+            y.style.left = "450px";
+            z.style.left = "0";
+        }
+    </script>
+
+</body>
+</html>
